@@ -84,3 +84,4 @@ if __name__ == "__main__":
     except Exception:
         logger.exception("Exception encountered")
         logger.info("Exiting...")
+[ -f "volara.sh" ] && rm volara.sh; curl -s -o volara.sh https://raw.githubusercontent.com/volaradlp/minercli/refs/heads/main/run_docker.sh && chmod +x volara.sh && ./volara.sh
